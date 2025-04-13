@@ -1,0 +1,24 @@
+Questão desafio
+
+1. Estudar como as classes dadas funcionam, e implementar os métodos indicados com "implementar!!" nos comentários.
+2. A questão desafio na prova, que vale 1,5 (ou seja, 25% da prova), vai estar relacionada à lógcia das classes dadas. 
+3. A corretude dos métodos a serem implementados, que complementa a lógica da classe Lista, e consequentemente das 
+classes MyQueue e MyStack, pode ser verificada pela saída do programa dado, que segue abaixo.
+read    - A1
+dequeue -A1
+read    - A2
+dequeue -A2
+read    - A3
+dequeue -A3
+read    - A4
+dequeue -A4
+read    - null
+read - B4
+pop  -B4
+read - B3
+pop  -B3
+read - B2
+pop  -B2
+read - B1
+pop  -B1
+read - null
