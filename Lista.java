@@ -33,27 +33,29 @@ public class Lista {
 		return ax;
 	}
 	public void removerUltimo() {
-		if (primeiro != null) {
-            if (primeiro.getProximo() == null) {
-                primeiro = null;
+		if (primeiro != null) { //Verificando se tem elementos na lista
+            if (primeiro.getProximo() == null) { // Se só tem um elemento na lista
+                primeiro = null; // A lista fica vazia
             } else {
-                ElementoLista aux = primeiro;
+                ElementoLista aux = primeiro; //Colocando variavel auxiliar para percorrer a lista sem perder a referencia do primeiro elementoe
                 while(aux.getProximo().getProximo() != null) {
-                    aux = aux.getProximo();
+                    aux = aux.getProximo(); // Percorrendo a lista até o ult elemento
                 }
                 aux.setProximo(null);
             }
         }
 	}
+
+
     
 	public void adicionarNoInicio(String conteudo) {
-        ElementoLista novo = new ElementoLista(primeiro, conteudo);
-        primeiro = novo;
+        ElementoLista novo = new ElementoLista(primeiro, conteudo); //Cria novo nó e adicona o próximo dele para o primeiro
+        primeiro = novo; //O primeiro nó da lista vira o que acabou de ser criado
  	}
 	public String lerPrimeiro() {
-		if (primeiro != null) {
-            return primeiro.getConteudo();
+		if (primeiro != null) { //Se houver conteúdo na lista
+            return primeiro.getConteudo();// retorna o conteúdo do primeiro
         }
-		return null;
+		return null; //Se não tiver nada retorna NULL
 	}
 }
