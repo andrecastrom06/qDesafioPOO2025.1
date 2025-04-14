@@ -38,7 +38,7 @@ public class Lista {
                 primeiro = null; // A lista fica vazia
             } else {
                 ElementoLista aux = primeiro; //Colocando variavel auxiliar para percorrer a lista sem perder a referencia do primeiro elementoe
-                while(aux.getProximo().getProximo() != null) {
+                while(aux.getProximo().getProximo() != null) {//getProximo().getProximo() vai ser pra chegar no penultimo elemento, já que o proximo elemento é o ultimo e o prox prox é null
                     aux = aux.getProximo(); // Percorrendo a lista até o ult elemento
                 }
                 aux.setProximo(null);
